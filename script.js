@@ -10,7 +10,7 @@ function updateLocalTime() {
     hour12: true,
   };
   let canadaTime = date.toLocaleString("en-US", options);
-  myLocalTime.textContent = "EST: " + canadaTime + ", CANADA";
+  myLocalTime.textContent = "EST: " + canadaTime;
 }
 
 updateLocalTime();
