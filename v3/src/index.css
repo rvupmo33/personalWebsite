@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --primaryblue: #73a6ed;
+  --btnBorder: #64748b;
+  --btnColor: #334155;
+  --btnHoverColor: #495d78;
+  --gray: #dbdbdb;
+}
+
+h {
+  color: #192234;
+  background: #111725;
+}
+
+body {
+  background-color: #111827;
+  color: var(--gray);
+  margin: 0 auto;
+}
+
+.circle {
+  background-color: green;
+  opacity: 70%;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(1.9);
+    opacity: 0.1;
+  }
+}
